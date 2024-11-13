@@ -1,0 +1,57 @@
+
+building_properties:
+  indoor_setpoint_temperature_K:
+    comment: "Indoor setpoint temperature (K)"
+    value: 293.15
+  roof_U_value:
+    comment: "Roof U-value (W/m2K)"
+    value: 0.18
+  roof_area:
+    comment: "Roof area (m2)"
+    value: 120
+  wall_U_value:
+    comment: "Wall U-value (W/m2K)"
+    value: 0.51
+  wall_area:
+    comment: "Wall area (m2)"
+    value: 132
+heat_pump:
+  fixed_condenser_temperature_K:
+    comment: "Fixed condenser temperature in K (60degC)"
+    value: 333.15
+  heat_transfer_area:
+    comment: "Adjusted heat transfer area (m2) to limit Q_transfer"
+    value: 1.11
+  off_temperature_threshold_K:
+    comment: "Turn off heat pump if tank temperature reaches 60degC"
+    value: 333.15
+  on_temperature_threshold_K:
+    comment: "Turn on heat pump if tank temperature drops below 40degC"
+    value: 313.15
+  overall_heat_transfer_coefficient:
+    comment: "Overall heat transfer coefficient between condenser and tank (W/m2K)"
+    value: 300
+hot_water_tank:
+  heat_loss_coefficient:
+    comment: Heat loss coefficient of the tank (W/K)
+    value: 5
+  mass_of_water:
+    comment: Mass of water in the tank (kg)
+    value: 200
+  specific_heat_capacity:
+    comment: "Specific heat capacity of water (J/kgK)"
+    value: 4186
+  total_thermal_capacity:
+    comment: Total thermal capacity of the water tank (J/K)
+    value: 837200
+initial_conditions:
+  initial_tank_temperature_K:
+    comment: "Initial tank temperature in K (45degC)"
+    value: 318.15
+simulation_parameters:
+  time_points:
+    comment: Number of evaluation time points
+    value: 1000
+  total_time_seconds:
+    comment: Total simulation time (24 hours in seconds)
+    value: 86400
